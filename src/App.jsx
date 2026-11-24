@@ -50,9 +50,9 @@ function CornerOrnaments() {
 
 function MusicControl({ playing, onToggle }) {
   return (
-    <button className={`music-control ${playing ? 'is-playing' : ''}`} onClick={onToggle} aria-label={playing ? 'Pause background music' : 'Play background music'}>
+    <button className={`music-control ${playing ? 'is-playing' : ''}`} onClick={onToggle} aria-label={playing ? 'Play background music' : 'Pause background music'}>
       <span className="music-bars" aria-hidden="true"><i /><i /><i /><i /></span>
-      <span>{playing ? 'Music on' : 'Music off'}</span>
+      <span>{playing ? 'Music off' : 'Music on'}</span>
       {playing ? <Volume2 size={15} /> : <VolumeX size={15} />}
     </button>
   );
